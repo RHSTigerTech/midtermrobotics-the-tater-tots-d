@@ -134,7 +134,7 @@ public class aMoveBot extends HummingbirdRobot {
                 setLED(3, 0);
                 setLED(4, 0);
             }
-            else
+            else{
                 compliment();
                 setFullColorLED(1, 0, 0, 255);
                 setFullColorLED(2, 0, 0, 255);
@@ -142,7 +142,8 @@ public class aMoveBot extends HummingbirdRobot {
                 setFullColorLED(1, 0, 0, 0);
                 setFullColorLED(2, 0, 0, 0);
             }
-        //stops if user is not close enuf 
+        }
+        //stops if user is not close enuf.
         else {
             speak("User is too far! Goodbye!!");
             Thread.sleep(3000);
@@ -153,4 +154,4 @@ public class aMoveBot extends HummingbirdRobot {
             
     }
 
-}
+    }
